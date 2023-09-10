@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .hover-effect {
+    @apply after:content-[''] after:block after:w-0 after:h-[3px] after:bg-primaryColor after:transition-[0.2s] after:duration-[linear] hover:after:w-full
+   }
+
+   .flex-2 {
+      @apply flex-[1_0_100%];
+   }
+}
+
+
+
+
+
+ 
+
+
+.container__right {
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 75px;
+  border-radius: 100%;
+}
+
+.card__content {
+  display: flex;
+  gap: 1rem;
+}
+
+.card__content span i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.card__details p {
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.card__details h4 {
+  text-align: right;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}

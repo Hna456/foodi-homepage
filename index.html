@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/about-us-1.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Foodi | Amazed With Tastes</title>
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <section class="shadow-md  rounded-lg m-2 border border-secondaryColor ">
+        <nav class="max-w-7xl mx-auto flex justify-between items-end  p-3">
+            <!--Logo Part-->
+            <img src="images/logo.png" alt="website-logo" class="w-20 ">
+            <!--list Part-->
+            <ul class="hidden  space-x-9 text-secondaryColor font-medium md:flex">
+                <li class="hover:text-primaryColor transition duration-300"><a href="#hero"
+                        class="hover-effect ">Home</a>
+                </li>
+                <li class="hover:text-primaryColor transition duration-300"><a href="#aboutUs"
+                        class="hover-effect">About</a>
+                </li>
+                <li class="hover:text-primaryColor transition duration-300"><a href="#menu"
+                        class="hover-effect">Menu</a>
+                </li>
+                <li class="hover:text-primaryColor transition duration-300"><a href="#gallery"
+                        class="hover-effect">Gallary</a>
+                </li>
+                <li class="hover:text-primaryColor transition duration-300"><a href="#review"
+                        class="hover-effect">Review</a>
+                </li>
+                <li class="hover:text-primaryColor transition duration-300"><a href="#order"
+                        class="hover-effect">Order</a>
+                </li>
+                <li class="hover:text-primaryColor transition duration-300"><a href="#team" class="hover-effect">Our
+                        Team</a>
+                </li>
+            </ul>
+            <!--Icon Part-->
+            <div class="hidden space-x-4 md:block">
+                <a href=""><i
+                        class="fa-solid fa-magnifying-glass hover:text-primaryColor transition-colors duration-300 "></i></a>
+                <a href=""><i class="fa-solid fa-heart hover:text-primaryColor transition duration-300"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping hover:text-primaryColor transition duration-300"></i></a>
+            </div>
+            <!--Menu Icon-->
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars text-2xl hover:text-primaryColor "></i>
+            </div>
+        </nav>
+    </section>
+
+    <!--Hero Section-->
+    <section class="my-10 md:my-20 lg:pb-10 bg-food-image scroll-mt-48 " id="hero">
+
+        <!--Small And Medium Screen Design-->
+        <div class="flex flex-col space-y-12 items-center md:space-y-14 lg:hidden">
+            <!--Paragraph Part-->
+            <div class="text-center space-y-5 text-secondaryColor">
+                <h1 class="text-2xl  font-bold md:text-4xl ">Get Fresh <span class="text-primaryColor">Food</span>
+                    in an Easy
+                    Way</h1>
+                <p class="text-sm mx-3 max-w-lg md:text-base ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus,
+                    quas. Cum
+                    commodi
+                    modi ut
+                    inventore distinctio, fuga cupiditate maiores vel explicabo aspernatur odio quas eius similique
+                    nihil placeat fugit hic?</p>
+            </div>
+            <!--Button-->
+            <div class="bg-primaryColor text-white w-32 px-3 py-2 group">
+                <a href="#" class="">Order Now</a>
+                <ion-icon name="chevron-forward-outline"
+                    class="translate-y-[2.5px] group-hover:translate-x-3 transition duration-300"></ion-icon>
+            </div>
+            <!--Image Part-->
+            <img src="images/main_img.png" alt="burger image" class="w-2/3">
+        </div>
+
+        <!--Large Screen Design Part-->
+        <div class="hidden lg:grid grid-cols-[1fr_1fr] gap-x-10  max-w-8xl mx-auto ">
+            <!--Part 1-->
+            <div class="flex flex-col space-y-10 ">
+                <!--Paragraph Part-->
+                <div class="flex flex-col space-y-8 text-secondaryColor">
+                    <h1 class="font-semibold max-w-lg text-6xl tracking-wide">Get Fresh <span
+                            class="text-primaryColor">Food</span>
+                        in an Easy
+                        Way</h1>
+                    <p class="text-sm  max-w-lg md:text-base ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Delectus,
+                        quas. Cum
+                        commodi
+                        modi ut
+                        inventore distinctio, fuga cupiditate maiores vel explicabo aspernatur odio quas eius similique
+                        nihil placeat fugit hic?</p>
+                </div>
+                <!--Button-->
+                <div class="bg-primaryColor text-white w-32 p-3 group ">
+                    <a href="" class="">Order Now</a>
+                    <ion-icon name="chevron-forward-outline"
+                        class="translate-y-[2.5px] group-hover:translate-x-3 transition duration-300"></ion-icon>
+                </div>
+                <!--Images Part-->
+                <div class="grid grid-cols-[1fr_1fr_1fr] max-w-2xl gap-3">
+                    <img src="images/hero-1.png" alt="fish and fries plate" class="h-full">
+                    <img src="images/hero-2.png" alt="chicken salad plate" class="h-full">
+                    <img src="images/hero-3.png" alt="" class="steak and salad plate">
+                </div>
+            </div>
+            <!--Part 2 -->
+            <div class="relative">
+                <img src="images/Food-Plate.png" alt="salmon and salad plate" class="">
+                <img src="images/hero-4.png" alt="rice and curry plate" class="w-52 absolute -top-14 right-0">
+                <img src="images/hero-5.png" alt="steak and egg plate" class="w-52 absolute -bottom-14 right-0 ">
+            </div>
+        </div>
+
+    </section>
+
+    <!--About Us Section-->
+
+    <div class="flex flex-col-reverse items-center gap-10 my-12 md:gap-16 lg:flex-row lg:max-w-6xl lg:mx-auto lg:justify-between scroll-mt-10"
+        id="aboutUs">
+        <div class="flex justify-center">
+            <img src="images/about-us-1.png" alt="big-plate" class="w-2/3 md:w-fit animate-movable">
+
+        </div>
+        <!--Paragraph Part-->
+        <div class="flex flex-col items-center space-y-6 text-center lg:items-start lg:text-start">
+            <h3 class="text-2xl text-secondaryColor font-bold md:text-4xl lg:text-5xl">About <Span
+                    class="text-primaryColor">Us</Span></h3>
+            <h4 class="text-xl text-secondaryColor font-semibold md:text-2xl lg:text-3xl">Why Choose us?</h4>
+            <p class="text-gray-400 text-sm max-w-md mx-3  lg:mx-0 md:text-base">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit.
+                Nihil rem
+                consequatur repellat voluptate esse
+                dolorum voluptas maxime possimus, adipisci molestias! Magnam totam ipsam rem error laborum ipsum atque
+                quod nostrum.</p>
+            <p class="text-gray-400 text-sm max-w-md mx-3 lg:mx-0 lg:text-base">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit.adipisci molestias! Magnam totam ipsam rem error laborum ipsum atque
+            </p>
+            <!--Button-->
+            <div class="bg-primaryColor text-white w-32 p-2 group md:p-3">
+                <a href="" class="">Order Now</a>
+                <ion-icon name="chevron-forward-outline"
+                    class="translate-y-[2.5px] group-hover:translate-x-3 transition duration-300"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!--Our Menu Section-->
+
+    <div class="flex flex-col space-y-10 md:my-32 bg-food-image bg-no-repeat bg-cover scroll-mt-10" id="menu">
+        <!--Headind Part-->
+        <h3 class="text-2xl text-secondaryColor font-bold md:text-4xl text-center ">Our <Span
+                class="text-primaryColor">Menu</Span>
+        </h3>
+        <!--Menu Products Parts-->
+        <div class="mx-auto grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4">
+            <!--First Product-->
+            <div class="space-y-3 group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative ">
+                    <img src="images/buger.jpg" alt="burger"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""><ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor"></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Burger</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Second Product-->
+            <div class="space-y-3 group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative  ">
+                    <img src="images/lasagna.webp" alt=""
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300 ">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Lasagna</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Third Product-->
+            <div class="space-y-3  group hover:opacity-80 ">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/pasta.jpg" alt="pasta"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Pasta</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Fourth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/chocolate_Drink.jpg" alt="chocolate drink"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300 ">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Drink</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Fifth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/pizza.jpg" alt="pizza"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Pizza</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Sixth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/Hot_dog.jpg" alt="hotdog"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Hot Dog</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Seventh Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/juse.jpg" alt="juice"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Juice</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Eigth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/biryani.webp" alt="Biryani"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Biryani</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Ninth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/chocolate.jpg" alt="chocolate"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Chocolate</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Tenth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/ice_cream.jpg" alt="ice-cream"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Ice Cream</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--Eleventh Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/Spanchi.jpg" alt="spanchi"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Spanchi</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Twelevth Product-->
+            <div class="space-y-3  group hover:opacity-80">
+                <!--Image Part-->
+                <div class="w-75 h-48 mx-auto relative">
+                    <img src="images/sandwich.jpg" alt="sandwich"
+                        class="w-full h-full rounded-3xl group-hover:scale-105 transition duration-300">
+                    <a href=""> <ion-icon name="heart"
+                            class="hidden group-hover:block  absolute top-3 right-0 group-hover:-translate-x-5 text-3xl  hover:text-primaryColor "></ion-icon></a>
+                </div>
+                <!--Paragraph Part-->
+                <div class="flex flex-col items-center space-y-3">
+                    <h4 class="text-primaryColor text-center  text-2xl font-bold">Sandwhich</h4>
+                    <div class="text-white bg-secondaryColor py-1 rounded-md">
+                        <a href="#" class="text-sm p-4">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Gallery Part-->
+
+    <div class="flex flex-col justify-center space-y-10 my-14 lg:space-y-16 scroll-mt-10" id="gallery">
+        <!--Heading-->
+        <h3 class="text-2xl text-secondaryColor font-bold md:text-4xl text-center ">Our <Span
+                class="text-primaryColor ">Gallery</Span></h3>
+        <!--Images and Info Part-->
+        <div class="flex flex-col max-w-7xl  gap-10 items-center mx-auto lg:flex-row  ">
+
+            <!--Paragraph Part-->
+            <div class="flex flex-col space-y-6 items-center text-center lg:text-start lg:items-start">
+                <h3 class="text-xl font-bold text-secondaryColor lg:text-3xl">Discover More About Different World
+                    Cuisine
+                    In Our
+                    Gallery
+                </h3>
+                <p class="text-sm text-gray-400 max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur id
+                    cumque vel at tenetur illum natus
+                    omnis exercitationem aspernatur quae officiis commodi error aliquam, debitis sunt porro earum, nobis
+                    veritatis!</p>
+                <p class="text-sm text-gray-400 max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur id
+                    cumque vel at tenetur illum natus
+                </p>
+                <div class="flex gap-5">
+                    <div class="bg-primaryColor text-white w-32 p-3 group ">
+                        <a href="" class="">Visit Now</a>
+                        <ion-icon name="chevron-forward-outline"
+                            class="translate-y-[2.5px] group-hover:translate-x-3 transition duration-300"></ion-icon>
+                    </div>
+                    <div class="bg-primaryColor text-white w-32 p-3 group ">
+                        <a href="" class="">Our Gallery</a>
+                        <ion-icon name="chevron-forward-outline"
+                            class="translate-y-[2.5px] group-hover:translate-x-3 transition duration-300"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!--Images Part-->
+            <section class="mx-2 lg:mx-0">
+                <!--Sider Wrapper-->
+                <div class="relative max-w-3xl rounded-md mx-auto my-0 ">
+                    <!--Slider-->
+                    <div class="flex aspect-[20/11] overflow-x-hidden  scroll-smooth shadow-md rounded-sm ">
+                        <img src="images/gallary_1.jpg" alt="" id="slide-1" class="flex-2 snap-start object-cover">
+                        <img src="images/gallary_2.jpg" alt="" id="slide-2" class="flex-2 snap-start object-cover">
+                        <img src="images/gallary_3.jpg" alt="" id="slide-3" class="flex-2 snap-start object-cover">
+                        <img src="images/gallary_4.jpg" alt="" id="slide-4" class="flex-2 snap-start object-cover">
+                        <img src="images/gallary_5.jpg" alt="" id="slide-5" class="flex-2 snap-start object-cover">
+                        <img src="images/gallary_6.jpg" alt="" id="slide-6" class="flex-2 snap-start object-cover">
+                    </div>
+                    <!--Slider Nav-->
+                    <div class="flex gap-3 absolute left-1/2 bottom-2 -translate-x-1/2 z-10 md:gap-4 md:bottom-3">
+                        <a href="#slide-1"
+                            class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white opacity-75 transition-opacity duration-300 md:border-2 border-secondaryColor "></a>
+                        <a href="#slide-2"
+                            class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white opacity-75 transition-opacity duration-300 md:border-2 border-secondaryColor "></a>
+                        <a href="#slide-3"
+                            class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white opacity-75 transition-opacity duration-300 md:border-2 border-secondaryColor "></a>
+                        <a href="#slide-4"
+                            class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white opacity-75 transition-opacity duration-300 md:border-2 border-secondaryColor "></a>
+                        <a href="#slide-5"
+                            class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white opacity-75 transition-opacity duration-300 md:border-2 border-secondaryColor "></a>
+                        <a href="#slide-6"
+                            class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white opacity-75 transition-opacity duration-300 md:border-2 border-secondaryColor  "></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!--Customer Review Part-->
+
+    <header class="flex flex-col  my-10 space-y-8 md:my-24 md:space-y-14 lg:my-28 lg:space-y-24 scroll-mt-10"
+        id="review">
+        <!--Headind Part-->
+        <h3 class="text-2xl text-secondaryColor font-bold md:text-4xl text-center ">Customer <Span
+                class="text-primaryColor ">Review</Span></h3>
+        <!--Info And Images Part-->
+        <div class="max-w-7xl mx-auto grid grid-cols-1  gap-12 lg:grid-cols-[1fr_1fr]">
+            <!--Left Part-->
+            <div class="flex flex-col items-center text-center space-y-10 mx-2 lg:text-start lg:items-start lg:mx-0  ">
+                <h1 class="text-xl font-bold text-secondaryColor lg:text-3xl">Read What Our Customers Love About Us</h1>
+                <p class="text-sm text-gray-400 max-w-lg ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, inventore nisi. Eos, autem.
+                    Fugit, veritatis magnam quo doloremque ullam mollitia voluptates eveniet dignissimos officiis
+                    blanditiis iste? Blanditiis et voluptas quia?
+                </p>
+                <p class="text-sm text-gray-400 max-w-lg ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, inventore nisi. Eos, autem.
+                    Fugit, veritatis magnam quo doloremque ullam mollitia voluptates eveniet dignissimos officiis
+                    blanditiis iste?
+                </p>
+                <button
+                    class="py-4 px-8 outline-none border-none text-white bg-primaryColor  cursor-pointer hover:bg-secondaryColor transition duration-300">Read
+                    our
+                    success
+                    stories</button>
+            </div>
+            <!--Container Right-->
+            <div class="grid-cols-1 grid gap-8  md:grid-cols-[1fr_1fr]  lg:grid-cols-1 mx-2 lg:mx-0 ">
+                <!--First Review-->
+                <div class="p-8 flex items-start gap-8 bg-white rounded-2xl shadow-4side  ">
+                    <img src="images/review_1.png" alt="user" class="max-w-xxs rounded-full ">
+                    <div class="flex gap-3">
+                        <span><i class="fa-solid fa-quote-left text-2xl text-primaryColor mr-1"></i></span>
+                        <div class="">
+                            <p class="italic mb-4">
+                                Had brunch at this restaurant one time and since then this place is my favorite one.
+                            </p>
+                            <h4 class="text-primaryColor text-right font-semibold">- Maria Brown</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Review-->
+                <div class="p-8 flex items-start gap-8 bg-white rounded-2xl shadow-4side ">
+                    <img src="images/review_2.png" alt="user" class="max-w-xxs rounded-full ">
+                    <div class="flex gap-3">
+                        <span><i class="fa-solid fa-quote-left text-2xl text-primaryColor mr-1"></i></span>
+                        <div class="">
+                            <p class="italic mb-4">
+                                Excellent services, they maintain cleanliness and take care of your need.
+                            </p>
+                            <h4 class="text-primaryColor text-right font-semibold">- Marnus Stephen</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Third Review-->
+                <div class="p-8 flex items-start gap-8 bg-white rounded-2xl shadow-4side ">
+                    <img src="images/review_3.png" alt="user" class="max-w-xxs rounded-full ">
+                    <div class="flex gap-3">
+                        <span><i class="fa-solid fa-quote-left text-2xl text-primaryColor mr-1"></i></span>
+                        <div class="">
+                            <p class="italic mb-4">
+                                Everything is simply perfect about this place. Highly suggested.
+                            <h4 class="text-primaryColor text-right font-semibold">- Sophie Stewart</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Order Part-->
+
+    <div class="bg-burger-image bg-cover bg-no-repeat my-14 flex flex-col space-y-16 md:my-18 scroll-mt-10" id="order">
+        <!--Heading Part-->
+        <h3 class="text-2xl text-secondaryColor font-bold md:text-4xl text-center ">Order <Span
+                class="text-primaryColor ">Now</Span></h3>
+        <!--Image And Info Part-->
+        <div class="max-w-7xl mx-auto flex flex-col  gap-5 lg:flex-row lg:items-center lg:gap-x-28 ">
+            <!--Image Part-->
+            <div class="flex justify-center">
+                <img src="images/order_image.png" alt="waiter waiting to get the order" class="md:max-w-xl">
+            </div>
+            <!--Data Part-->
+            <div class="grid  gap-5 mx-3 grid-cols-2 md:gap-x-5 md:mx-0  ">
+                <div class="">
+                    <p class="text-sm text-secondaryColor font-semibold lg:text-lg">Name</p>
+                    <input type="text" name="" id="name" placeholder="your name"
+                        class="border-2 border-gray-300 rounded-sm py-1 px-2 text-sm w-full mt-1 focus:outline-primaryColor text-secondaryColor lg:text-base">
+                </div>
+                <div>
+                    <p class="text-sm text-secondaryColor font-semibold lg:text-lg">Number</p>
+                    <input type="tel" name="" id="" placeholder="your number"
+                        class="border-2 border-gray-300 rounded-sm py-1 px-2 text-sm w-full mt-1 focus:outline-primaryColor text-secondaryColor lg:text-base">
+                </div>
+                <div>
+                    <p class="text-sm text-secondaryColor font-semibold lg:text-lg">Your Order</p>
+                    <input type="text" name="" id="" placeholder="your food name"
+                        class="border-2 border-gray-300 rounded-sm py-1 px-2 text-sm w-full mt-1 focus:outline-primaryColor text-secondaryColor lg:text-base">
+                </div>
+                <div>
+                    <p class="text-sm text-secondaryColor font-semibold lg:text-lg">Email</p>
+                    <input type="email" name="" id="" placeholder="your email"
+                        class="border-2 border-gray-300 rounded-sm py-1 px-2 text-sm w-full mt-1 focus:outline-primaryColor text-secondaryColor lg:text-base">
+                </div>
+                <div>
+                    <p class="text-sm text-secondaryColor font-semibold lg:text-lg">How Much</p>
+                    <input type="number" name="" id="" placeholder="how many order"
+                        class="border-2 border-gray-300 rounded-sm py-1 px-2 text-sm w-full mt-1 focus:outline-primaryColor text-secondaryColor lg:text-base">
+                </div>
+                <div>
+                    <p class="text-sm text-secondaryColor font-semibold lg:text-lg">Address</p>
+                    <input type="text" name="" id="" placeholder="your address"
+                        class="border-2 border-gray-300 rounded-sm py-1 px-2 text-sm w-full mt-1 focus:outline-primaryColor text-secondaryColor lg:text-base">
+                </div>
+                <div class="bg-primaryColor text-white w-32 py-2 px-3 group mt-3 ">
+                    <a href="" class="">Order Now</a>
+                    <ion-icon name="chevron-forward-outline"
+                        class="translate-y-[2.5px] group-hover:translate-x-3 transition duration-300"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Team Part-->
+    <div class="flex flex-col space-y-20 my-14 md:my-18  scroll-mt-10" id="team">
+        <!--Heading Part-->
+        <h3 class="text-2xl text-secondaryColor font-bold md:text-4xl text-center ">Our <Span
+                class="text-primaryColor ">Team</Span></h3>
+        <!--Profiles Part-->
+        <div class="grid grid-cols-1 gap-5 max-w-7xl mx-auto md:grid-cols-3 lg:grid-cols-4 ">
+            <!--First Profile-->
+            <div
+                class="w-72 h-72 rounded-half my-0 mx-4 flex items-center justify-center relative group shadow-round transition-all duration-300 cursor-pointer hover:rounded-3xl hover:h-80">
+                <img src="images/chef1.png" alt="picture of chef"
+                    class="w-64 h-64 object-cover object-center rounded-half pointer shadow-round z-20 transition-[0,4s] group-hover:rounded-3xl group-hover:-mt-56 ">
+                <div class=" absolute text-center top-1/4 transition-[0,4s] group-hover:top-[60%]">
+                    <h2 class="text-primaryColor text-lg  font-bold ">Chef</h2>
+                    <p class="text-sm text-gray-400 mx-2 my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <!--Icon Part-->
+                    <div class="flex space-x-3 justify-center mt-4">
+                        <i
+                            class="fa-brands fa-facebook-f text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-twitter text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-instagram text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Second Profile-->
+            <div
+                class="w-72 h-72 rounded-half my-0 mx-4 flex items-center justify-center relative group shadow-round transition-all duration-300 cursor-pointer hover:rounded-3xl hover:h-80 hover:mt-20 md:hover:mt-0">
+                <img src="images/chef2.png" alt="picture of chef"
+                    class="w-64 h-64 object-cover object-center rounded-half pointer shadow-round z-20 transition-[0,4s] group-hover:rounded-3xl group-hover:-mt-56 ">
+                <div class=" absolute text-center top-1/4 transition-[0,4s] group-hover:top-[60%]">
+                    <h2 class="text-primaryColor text-lg  font-bold ">Chef</h2>
+                    <p class="text-sm text-gray-400 mx-2 my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <!--Icon Part-->
+                    <div class="flex space-x-3 justify-center mt-4">
+                        <i
+                            class="fa-brands fa-facebook-f text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-twitter text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-instagram text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Third Profile-->
+            <div
+                class="w-72 h-72 rounded-half my-0 mx-4 flex items-center justify-center relative group shadow-round transition-all duration-300 cursor-pointer hover:rounded-3xl hover:h-80 hover:mt-20 md:hover:mt-0">
+                <img src="images/chef3.jpg" alt="picture of chef"
+                    class="w-64 h-64 object-cover object-center rounded-half pointer shadow-round z-20 transition-[0,4s] group-hover:rounded-3xl group-hover:-mt-56 ">
+                <div class=" absolute text-center top-1/4 transition-[0,4s] group-hover:top-[60%]">
+                    <h2 class="text-primaryColor text-lg  font-bold ">Chef</h2>
+                    <p class="text-sm text-gray-400 mx-2 my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <!--Icon Part-->
+                    <div class="flex space-x-3 justify-center mt-4">
+                        <i
+                            class="fa-brands fa-facebook-f text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-twitter text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-instagram text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Fourth Profile-->
+            <div
+                class="w-72 h-72 rounded-half my-0 mx-4 flex items-center justify-center relative group shadow-round transition-all duration-300 hover:rounded-3xl hover:h-80 hover:mt-20 md:hover:mt-0 cursor-pointer">
+                <img src="images/chef4.jpg" alt="picture of chef"
+                    class="w-64 h-64 object-cover object-center rounded-half pointer shadow-round z-20 transition-[0,4s] group-hover:rounded-3xl group-hover:-mt-56 ">
+                <div class=" absolute text-center top-1/4 transition-[0,4s] group-hover:top-[60%]">
+                    <h2 class="text-primaryColor text-lg  font-bold ">Chef</h2>
+                    <p class="text-sm text-gray-400 mx-2 my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <!--Icon Part-->
+                    <div class="flex space-x-3 justify-center mt-4">
+                        <i
+                            class="fa-brands fa-facebook-f text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-twitter text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                        <i
+                            class="fa-brands fa-instagram text-secondaryColor hover:text-primaryColor transition-colors duration-300 cursor-pointer text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-gray-100 mt-20 pt-10">
+        <div
+            class="max-w-6xl mx-5 border-b-2 border-primaryColor pb-4 grid  grid-cols-[1fr_1fr] gap-10 md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr_1fr] lg:mx-auto">
+            <!--Location Part-->
+            <div class="space-y-3">
+                <h4 class="text-secondaryColor text-lg font-semibold">Location</h4>
+                <div class="text-sm space-y-2">
+                    <p class="hover:s">Sri Lanka</p>
+                    <p>USA</p>
+                    <p>India</p>
+                    <p>Japan</p>
+                    <p>Italy</p>
+                </div>
+            </div>
+            <!--Link Part-->
+            <div class="space-y-3 ">
+                <h4 class="text-secondaryColor text-lg font-semibold">Quick Link</h4>
+                <div class="text-sm space-y-2">
+                    <a href="#hero"
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block">Home</a>
+                    <a href="#aboutUs"
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block">About</a>
+                    <a href="#menu"
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block">Menu</a>
+                    <a href="#gallery"
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block">Gallery</a>
+                    <a href="#order"
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block">Order</a>
+                </div>
+            </div>
+            <!--Contact Part-->
+            <div class="space-y-3 ">
+                <h4 class="text-secondaryColor text-lg font-semibold">Contact</h4>
+                <div class="text-sm space-y-2">
+                    <p
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block cursor-pointer">
+                        +90 00 1111
+                        345</p>
+                    <p
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block cursor-pointer">
+                        +90 00 1111
+                        345</p>
+                    <p
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block cursor-pointer">
+                        hina456@gmail.com</p>
+                    <p
+                        class="hover:text-primaryColor hover:font-semibold transition-all duration-300 block cursor-pointer">
+                        foodi@gmail.com</p>
+                </div>
+            </div>
+            <!--Service Part-->
+            <div class="space-y-3 ">
+                <h4 class="text-secondaryColor text-lg font-semibold">Our Service</h4>
+                <div class="text-sm space-y-2">
+                    <p>Fast Delivery </p>
+                    <p>Easy Payments</p>
+                    <p>24/7 Service</p>
+                </div>
+            </div>
+            <!--Follows Part-->
+            <div class="space-y-3 ">
+                <h4 class="text-secondaryColor text-lg font-semibold">Our Service</h4>
+                <div class="flex space-x-3 ">
+                    <i
+                        class="fa-brands fa-facebook-f  hover:text-primaryColor transition-colors duration-300 cursor-pointer"></i>
+                    <i
+                        class="fa-brands fa-twitter  hover:text-primaryColor transition-colors duration-300 cursor-pointer"></i>
+                    <i
+                        class="fa-brands fa-instagram  hover:text-primaryColor transition-colors duration-300 cursor-pointer"></i>
+                    <i class="fa-brands fa-linkedin hover:text-primaryColor transition-colors duration-300 cursor-pointer""></i>
+                </div>
+            </div>
+        </div>
+
+        <p class=" text-center mt-4 pb-2 text-secondaryColor ">Designed By <span class=" text-primaryColor
+                        font-semibold">Hina Hotak</span></p>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
